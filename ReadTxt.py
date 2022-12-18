@@ -51,14 +51,18 @@ def rowOutput(row):
 
 
 if __name__ == '__main__':
-    strok = input("show data all для вывода всех записей, show data n, где n количество записей\n")
-    try:
+    while True:
         try:
-            result = re.search(r'\d', strok)
-            rowOutput(int(result.group(0)))
-        except:
-            result = re.search(r'show data all', strok)
-            if result.group(0) == "show data all":
-                rowAll()
-    except AttributeError:
-        print("такой команды нет")
+            strok = input("show data all для вывода всех записей, show data n, где n количество записей\n")
+            try:
+                result = re.search(r'\d', strok)
+                rowOutput(int(result.group(0)))
+            except:
+                result = re.search(r'show data all', strok)
+                if result.group(0) == "show data all":
+                    rowAll()
+        except AttributeError:
+            print("такой команды нет")
+        except KeyboardInterrupt:
+            print('Выход')
+            exit()
