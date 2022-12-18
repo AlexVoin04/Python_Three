@@ -11,3 +11,4 @@ n + 1	 Fedorov	   Nikita	    Stepanovich	35
 
 	Если пользователь вводит команду show data {integer number}, например, 
 show data 10, то необходимо вывести первые 10 записей из текстового файла в формате таблицы представленной выше.
+![image](https://user-images.githubusercontent.com/99070761/208307385-5f398bfb-5630-4874-9bbd-ab838092065c.png)
